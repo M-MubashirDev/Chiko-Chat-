@@ -14,7 +14,7 @@ export default function MessageBox({ socket }) {
   } = JSON.parse(localStorage.getItem("auth")) || {};
   console.log(currentUser);
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault();
 
     if (inputValue.trim()) {
       const user = searchParam.get("user");
